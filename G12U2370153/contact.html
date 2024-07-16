@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+    <link rel="icon" href="icons/icon.png">
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body{
+        background-color: aliceblue;
+        font-family: "Montserrat";
+        min-height: 100vh;
+      }
+      .container{
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+      li {
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      th {
+        text-align: right;
+        padding-right: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="about.html">About Us</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="projects.html">Our Projects</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="support.html">Support Us</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="campaigns.html">Our Campaigns</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+
+    <div class="header">
+      <div class="left">
+        <a href="index.html"><img class="logo" src="logos/logo.png" alt="logo"></a>
+      </div>
+      <div class="middle">
+        <nav>
+          <ul class="navLinks">
+            <li class="hideOnMobile navList"><a class="navA" href="about.html">About Us</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="projects.html">Our Projects</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="support.html">Support Us</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="campaigns.html">Our Campaigns</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <ul style="display: flex;
+        flex-direction:row;
+        ">
+          <a href="donate.html" target="_blank"><button class="donate">&#9829;Donate</button></a>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="container header-pg">
+  <div class="text-box">
+    <h1 class="header-text" >
+      <strong>Contact Us</strong>
+    </h1>
+  </div>
+</div>
+
+
+
+<section class="container">
+  <div class="section-div">
+
+    <!--I used form so that user can leave some query information and personal details-->
+    <div class="form">
+      <header>
+        Get In Touch
+      </header>
+      <form action="#">
+        <div class="form-container">
+          <div class="name">
+            <div class="first">
+              <label>First Name</label>
+              <input type="text" required>
+            </div>
+            <div class="last">
+              <label>Last Name</label>
+              <input type="text" required>
+            </div>
+          </div>
+          <div class="email">
+            <label>E-Mail</label>
+            <input type="text" required>
+          </div>
+          <div class="message">
+            <label>Message</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+
+      </form>
+      <section style="margin-top: 5%;">
+        <div style="margin-bottom: 4%;">
+          <input type="checkbox" id="checking">
+          <label for="checking">I agree to the <span><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="donate.html" target="_blank">Terms &amp; Conditions</a></span>&amp;<span><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="donate.html" target="_blank">Privacy Policy</a></span></label>
+        </div>
+        <button class="btn"><a href="#">Submit</a></button>
+      </section>
+
+    </div>
+
+    <!--Address and some email addressed-->
+    <div class="info">
+      <header>Contact Info</header>
+      <h3>HEADQUARTERS</h3>
+      <p>
+        University of East London
+        <br>
+        University Way
+        <br>
+        London
+        <br>
+        E16 2RD
+      </p>
+      <a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">+44 20 8223 3000</a>
+      <h3>E-Mail</h3>
+      <h4>Chief Executive &amp; Media</h4>
+      <a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">online&commat;mightyhope.org.uk</a>
+      <h4>Fundraising &amp; Corporate Partnerships</h4>
+      <p>Get in touch to support us through fundraising and volunteering</p>
+      <a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">partnerships&commat;mightyhope.org.uk</a>
+      <h4>Charity applications</h4>
+      <p>For charities looking to take part in one of our campaigns</p>
+      <a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">campaigns&commat;mightyhope.org.uk</a>
+      <div>
+        <ul style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        ">
+        <!--List of social accounts-->
+          <li><a href="https://twitter.com/" target="_blank"><img class="sMediaLogo" src="logos/twitterLogo.png" alt=""></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img class="sMediaLogo" src="logos/facebookLogo.png" alt=""></a></li>
+          <li><a href="https://uk.linkedin.com/" target="_blank"><img class="sMediaLogo" src="logos/linkedinLogo.png" alt=""></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><img class="sMediaLogo" src="logos/instagramLogo.png" alt=""></a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</section>
+
+<section class="newsletter container">
+  <div class="newsletter-div">
+    <header>
+      Subscribe To Our Newsletter
+    </header>
+    <form action="#">
+      <div>
+        <div class="details">
+          <div class="full-name">
+            <label>First Name</label>
+            <input type="text" required>
+          </div>
+          <div class="contact-email">
+            <label>Your E-Mail</label>
+            <input type="text" required>
+          </div>
+        </div>
+      </div>
+
+    </form>
+    <div style="margin-top: 2%;">
+      <div style="margin-bottom: 2%;">
+        <!--Checkbox works even if u press text-->
+        <input type="checkbox" id="agree">
+        <label for="agree">I agree to being contacted by Mighty Hope</label>
+      </div>
+      <button class="btn"><a href="#">Submit</a></button>
+    </div>
+
+  </div>
+
+
+
+</section>
+
+
+<section class="container">
+  <!-- here my 4 to 4 table, styled !-->
+  <div>
+    <h1 style="color: #07a094;
+    font-size: calc(1.4625rem + 1.55vw);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: 5%;
+    margin-bottom: 3%;">
+      Worldwide Support Lines
+    </h1>
+    <table width="100%" border="1px" style="
+    border-color: #07a094;
+    margin-bottom: 5%;
+    "
+    >
+      <tr style="
+      text-align: center;
+      color: #07a094;
+      line-height: 1.3;
+      letter-spacing: 1.2;
+      font-size: 20px;"
+      >
+        <td style="padding: 3%;">Country</td>
+        <td>City</td>
+        <td>Contact Number</td>
+        <td>E-mail</td>
+      </tr>
+      <tr>
+        <td  style="padding: 1%;">USA</td>
+        <td>New York</td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">+1 234 567 8901</a></td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">info&commat;mightyhope.org.usa</a></td>
+      </tr>
+      <tr>
+        <td style="padding: 1%;">Germany</td>
+        <td>Frankfurt</td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">+49 69 1234 5678</a></td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">info&commat;mightyhope.org.de</a></td>
+      </tr>
+      <tr>
+        <td style="padding: 1%;">Italy</td>
+        <td>Rome</td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">+39 02 26 83 01 02</a></td>
+        <td style="text-align: center;"><a style="color: rgb(226,81,91); text-decoration: underline; cursor: pointer;" href="#">info&commat;mightyhope.org.it</a></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="downBar">
+  <div class="container">
+    <div style="
+    display: flex;
+    flex-direction: row;
+    padding-bottom:20px;
+    ">
+      <div style="flex: 2;">
+        <ul style="
+        width: 250px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        ">
+          <li><a href="index.html"><img class="logoDown" src="logos/logo.png" alt="logo"></a></li>
+          <li>Mighty Hope</li>
+          <li>Mailing Address: University of East London, University Way, London, E16 2RD, England</li>
+          <li>Registered Company No. 0001 <br>Registered Charity No. 0001</li>
+        </ul>
+      </div>
+      <div style="flex: 3;" class="downbar-list">
+        <ul>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Our Mission</a></li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Stories</a></li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Corporate partnerships</a></li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">News</a></li>
+        </ul>
+      </div>
+      <div style="flex: 1;">
+        <ul style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        ">
+          <li><a href="https://twitter.com/" target="_blank"><img class="sMediaLogo" src="logos/twitterLogo.png" alt="link-s-media"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img class="sMediaLogo" src="logos/facebookLogo.png" alt="link-s-media"></a></li>
+          <li><a href="https://uk.linkedin.com/" target="_blank"><img class="sMediaLogo" src="logos/linkedinLogo.png" alt="link-s-media"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><img class="sMediaLogo" src="logos/instagramLogo.png" alt="link-s-media"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ">
+      <div>
+        <ul style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        ">
+          <li class="navListBottom">COPYRIGHT &#169; MIGHTY HOPE 2024</li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;TERMS&#38;CONDITIONS</a></li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;PRIVACY POLICY</a></li>
+          <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;DONATION POLICY</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        ">
+          <li class="navListBottom"><a class="navABottom" href="#">&#124;&#43;44 777 180 3724</a></li>
+          <li class="navListBottom"><a class="navABottom" href="#">&#124;&nbsp;info&commat;mightyhope.org.uk</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+          var header = document.querySelector('.header');
+          var scrolled = window.scrollY;
+
+          if (scrolled > 150) {
+              header.style.backgroundColor = 'white'; // Change background color to white when scrolled
+          } else {
+              header.style.backgroundColor = 'transparent'; // Keep background color transparent when not scrolled
+          }
+      });
+  </script>
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

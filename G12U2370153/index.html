@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and Favicon -->
+    <title>Mighty Hope</title>
+    <link rel="icon" href="icons/icon.png">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--Internal CSS-->
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body{
+        background-color: aliceblue;
+        font-family: "Montserrat";
+        min-height: 100vh;
+      }
+      .container{
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+      li {
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--Sidebar section for smaller screen sizes-->
+    <nav>
+      <ul class="sidebar">
+        <!-- "X" icon-->
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="about.html">About Us</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="projects.html">Our Projects</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="support.html">Support Us</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="campaigns.html">Our Campaigns</a></li>
+        <li class="sidebarLi"><a class="sidebarA" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!--Navigation Bar-->
+    <div class="header">
+      <div class="left">
+        <a href="index.html"><img class="logo" src="logos/logo.png" alt="logo"></a>
+      </div>
+      <div class="middle">
+        <nav>
+          <ul class="navLinks">
+            <li class="hideOnMobile navList"><a class="navA" href="about.html">About Us</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="projects.html">Our Projects</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="support.html">Support Us</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="campaigns.html">Our Campaigns</a></li>
+            <li class="hideOnMobile navList"><a class="navA" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <ul style="display: flex;
+        flex-direction:row;
+        ">
+          <a href="donate.html" target="_blank"><button class="donate">&#9829;Donate</button></a>
+          <!--Hamburger Menu Icon-->
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--Header-->
+    <div class="container header-pg">
+      <div class="text-box">
+        <h1 class="header-text" >
+          <strong>World's</strong>
+          <br>
+          <strong>child care</strong>
+          <br>
+          <strong>charity</strong>
+        </h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stats-cover">
+        <ul>
+          <li>
+            <div class="stats-icon">
+              <img src="icons/icon-1.svg" alt="stats-icon">
+            </div>
+            <div class="stats-number">
+              97,045
+            </div>
+            <div class="stats-text">
+              Disadvantaged Children Engaged
+            </div>
+          </li>
+          <li>
+            <div class="stats-icon">
+              <img src="icons/icon-2.svg" alt="stats-icon">
+            </div>
+            <div class="stats-number">
+              &#163; 3.87 M
+            </div>
+            <div class="stats-text">
+              Raised to Fund Projects
+            </div>
+          </li>
+          <li>
+            <div class="stats-icon">
+              <img src="icons/icon-3.svg" alt="stats-icon">
+            </div>
+            <div class="stats-number">
+              163
+            </div>
+            <div class="stats-text">
+              Projects Delivered
+            </div>
+          </li>
+        </ul>
+        <div class="stats-date">
+          Date from XXXX to XXXX
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <section class="container our-vision">
+      <div style="
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      ">
+        <div style="display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;">
+          <div style="flex: 1;">
+            <H1>
+              Our Vision
+            </H1>
+          </div>
+          <div style="flex: 2;">
+            <p>
+              We believe every kid should have a good, safe, and joyful childhood so they can grow up well and avoid poverty in the future.
+            </p>
+          </div>
+        </div>
+        <div style="margin-left: auto;">
+          <a href="donate.html" target="_blank" class="read-more-btn">
+            Find Out About Us
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="theory-of-change">
+      <h1>
+        The Theory of Change
+      </h1>
+      <div class="row">
+        <a class="img-col" href="donate.html" target="_blank">
+          <div>
+            <img src="images/image-12.jpg">
+            <div class="layer">
+              <h3>Activities</h3>
+            </div>
+          </div>
+        </a>
+        <a class="img-col" href="donate.html" target="_blank">
+          <div>
+            <img src="images/image-14.jpg">
+            <div class="layer">
+              <h3>Outcomes</h3>
+            </div>
+          </div>
+        </a>
+        <a class="img-col" href="donate.html" target="_blank">
+          <div>
+            <img src="images/image-13.jpg">
+            <div class="layer">
+              <h3>Impact</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="info">
+  <div>
+    <h1>
+      The rise in living expenses is having a devastating impact on children who are in poverty.
+    </h1>
+    <p>We're confronted with a mounting crisis. In London, 700,000 children, which is 33% of them, are living in poverty. Our studies reveal that nearly 40% of children in London frequently skip meals and experience hunger because of the escalating cost of living.</p>
+    <p>
+      Alarming figures are emerging, shedding light on the severity of the crisis facing children. Earlier this year, 78% of school and public health nurses reported an uptick in children experiencing tooth decay or damage due to hunger and inadequate nutrition. Additionally, 72% of school staff observed a rise in hygiene issues among students due to poverty. According to our winter research report titled "There's Nothing Left for You: Children in Deep Poverty," 90% of surveyed social workers noted that deep poverty is hindering children's educational opportunities. Furthermore, 58% of surveyed pediatricians linked an increase in their workload to more children facing deep poverty. Our most vulnerable children are now confronting profound and enduring poverty, which drastically impacts their lives instead of just temporary hardship.
+    </p>
+    <p>
+      Join us in changing the trajectory of a vulnerable child's life. Your assistance will ensure that poverty doesn't define their future.
+    </p>
+    <h2>
+      Thank You !
+    </h2>
+    <a href="donate.html" target="_blank"><button class="donate">&#9829;Donate</button></a>
+  </div>
+</section>
+
+<section class="news-sec">
+  <h2 style="
+  font-size: 30px;
+  font-weight: 500;
+  ">
+    RECENT NEWS
+  </h2>
+  <div style="display: flex;
+  flex-direction: column;">
+    <div class="news">
+      <div class="news-col">
+        <img src="images/image-10.jpg">
+        <h3>
+          Meet Team GB and change a child's life
+        </h3>
+        <a href="donate.html" target="_blank">See Post</a>
+      </div>
+      <div class="news-col">
+        <img src="images/image-15.jpg">
+        <h3>
+          A BIG thank you to Bank of England
+        </h3>
+        <a href="donate.html" target="_blank">See Post</a>
+      </div>
+      <div class="news-col">
+        <img src="images/image1.jpg">
+        <h3>
+          Children suffering due to lack of outdoor play
+        </h3>
+        <a href="donate.html" target="_blank">See Post</a>
+      </div>
+    </div>
+    <div>
+      <a href="donate.html" target="_blank" class="read-more-btn">
+        See More Posts
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="big-text container">
+  <div>
+    <p>
+
+        Every child deserves a nurturing, 
+        <strong>joyful</strong>
+         and
+        <strong>secure upbringing</strong>
+         , setting them up for 
+        <strong>success</strong>
+         and breaking the cycle of poverty.
+
+    </p>
+    <div>
+      <a href="support.html" class="read-more-btn-secondary">
+        Support Us
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+    <!--Footer section for additional Information-->
+
+    <div class="downBar">
+      <div class="container">
+        <div style="
+        display: flex;
+        flex-direction: row;
+        padding-bottom:20px;
+        ">
+          <div style="flex: 2;">
+            <ul style="
+            width: 250px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            ">
+              <li><a href="index.html"><img class="logoDown" src="logos/logo.png" alt="logo"></a></li>
+              <li>Mighty Hope</li>
+              <li>Mailing Address: University of East London, University Way, London, E16 2RD, England</li>
+              <li>Registered Company No. 0001 <br>Registered Charity No. 0001</li>
+            </ul>
+          </div>
+          <div style="flex: 3;" class="downbar-list">
+            <ul>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Our Mission</a></li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Stories</a></li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">Corporate partnerships</a></li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">News</a></li>
+            </ul>
+          </div>
+          <div style="flex: 1;">
+            <ul style="
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            ">
+              <li><a href="https://twitter.com/" target="_blank"><img class="sMediaLogo" src="logos/twitterLogo.png" alt="link-s-media"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img class="sMediaLogo" src="logos/facebookLogo.png" alt="link-s-media"></a></li>
+              <li><a href="https://uk.linkedin.com/" target="_blank"><img class="sMediaLogo" src="logos/linkedinLogo.png" alt="link-s-media"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img class="sMediaLogo" src="logos/instagramLogo.png" alt="link-s-media"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+          <div>
+            <ul style="
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            ">
+              <li class="navListBottom">COPYRIGHT &#169; MIGHTY HOPE 2024</li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;TERMS&#38;CONDITIONS</a></li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;PRIVACY POLICY</a></li>
+              <li class="navListBottom"><a class="navABottom" href="donate.html" target="_blank">&#124;DONATION POLICY</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul style="
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            ">
+              <li class="navListBottom"><a class="navABottom" href="#">&#124;&#43;44 777 180 3724</a></li>
+              <li class="navListBottom"><a class="navABottom" href="#">&#124;&nbsp;info&commat;mightyhope.org.uk</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--Java Script Function to handle sidebar visibility-->
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <!--Function that changes background color of the Navbar-->
+    <script>
+      window.addEventListener('scroll', function() {
+          var header = document.querySelector('.header');
+          var scrolled = window.scrollY;
+
+          if (scrolled > 150) {
+              header.style.backgroundColor = 'white'; // Change background color to white when scrolled
+          } else {
+              header.style.backgroundColor = 'transparent'; // Keep background color transparent when not scrolled
+          }
+      });
+  </script>
+  <!--Function that moves Statistics section up when scrolled-->
+  <script>
+    window.addEventListener('scroll', function() {
+        var statsSection = document.querySelector('.stats-cover');
+        var scrolled = window.scrollY;
+        var stopPoint = 200;
+        var newMarginTop = 100 - Math.min(scrolled / 2, stopPoint);
+
+        statsSection.style.marginTop = Math.max(newMarginTop, -100) + 'px';
+    });
+  </script>
+  </body>
+</html>
